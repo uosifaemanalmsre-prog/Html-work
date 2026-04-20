@@ -8,55 +8,53 @@
 
 <header>
     <h1>Talk / Comments Page</h1>
-
-    <button onclick="commentDialog.showModal()">Kommentoi</button>
 </header>
+
+<nav>
+  <a href=file:///C:/Users/yousef.almassri/OneDrive%20-%20Turun%20kaupunki,%20kasvatus%20ja%20opetus/Documents/Topi/Html-work/portfolio/index.html>Go Back</a>
+</nav>
 
 <main>
 
-    <dialog id="commentDialog">
-
+    <section>
         <h2>Leave a Comment</h2>
 
         <form>
             <div>
-                <label>Your message:</label><br>
-                <textarea rows="6" cols="50"></textarea>
+                <label for="message">Your message:</label><br>
+                <textarea id="message" name="message" rows="6" cols="50" placeholder="Write your comment here..."></textarea>
             </div>
 
             <div>
-                <label>Email:</label><br>
-                <input type="email" required>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
             </div>
 
             <div>
-                <label>Birthday:</label><br>
-                <input type="date">
+                <label for="birthday">Birthday:</label><br>
+                <input type="date" id="birthday" name="birthday">
             </div>
 
             <div>
-                <label>Message type:</label><br>
-                <select>
-                    <option>Question</option>
-                    <option>Comment</option>
+                <label for="type">Message type:</label><br>
+                <select id="type" name="type">
+                    <option value="question">Question</option>
+                    <option value="comment">Comment</option>
                 </select>
             </div>
 
             <div>
-                <input type="checkbox">
-                <label>I agree that my data can be used for marketing</label>
+                <input type="checkbox" id="consent" name="consent">
+                <label for="consent">
+                    I agree that my data can be used for marketing
+                </label>
             </div>
 
             <div>
                 <button type="submit">Send</button>
-
-                <button type="button" onclick="commentDialog.close()">
-                    Close
-                </button>
             </div>
         </form>
-
-    </dialog>
+    </section>
 
     <section>
         <h2>Previous Comments</h2>
