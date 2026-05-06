@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+}
+
+/* Top sections */
+header {
+  background: #ccc;
+  padding: 15px;
+}
+
+nav {
+  background: #aaa;
+  padding: 10px;
+}
+
+/* GRID CONTAINER */
+.grid-container {
+  display: grid;
+  grid-template-columns: 200px 1fr; /* sidebar + content */
+  min-height: 60vh;
+}
+
+/* Side nav */
+aside {
+  background: #ddd;
+  padding: 10px;
+}
+
+/* Content */
+main {
+  background: #eee;
+  padding: 10px;
+}
+
+/* Footer */
+footer {
+  background: #ccc;
+  padding: 10px;
+}
+header, nav, aside, main, footer {
+  border: 2px solid black;
+}
+.nav {
+display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  width: 98.7%;
+}
+.nav a {
+  border: 2px solid black;
+  background: #aaa;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100px; /* controls square height */
+  text-decoration: none;
+  color: black;
+}
+.subnav {
+  display: grid;
+  grid-template-columns: 1fr;      /* ONE column */
+  grid-template-rows: repeat(3, 1fr); /* FOUR equal rows */
+  gap: 10px;
+  height: 96%; /* important so rows can stretch */
+}
+.subnav div {
+  background: #ccc;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'MyHeadingFont';
+  src: url("Caveat/Caveat-VariableFont_wght.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'MyBodyFont';
+  src: url("Intel_One_Mono/IntelOneMono-VariableFont_wght.ttf") format('truetype');
+}
+
+body {
+  font-family: 'MyBodyFont';
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'MyHeadingFont';
+}
