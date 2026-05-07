@@ -2,6 +2,7 @@ body {
   margin: 0;
 }
 
+/* Top sections */
 header {
   background: #007535;
   padding: 15px;
@@ -12,22 +13,20 @@ nav {
   padding: 10px;
 }
 
+/* GRID CONTAINER */
 .grid-container {
   display: grid;
-  grid-template-columns: 200px 1fr; 
   min-height: 60vh;
 }
 
-aside {
-  background: #1c77c7;
-  padding: 10px;
-}
 
+/* Content */
 main {
   background: #008f8f;
   padding: 10px;
 }
 
+/* Footer */
 footer {
   background: #1c77c7;
   padding: 10px;
@@ -37,7 +36,7 @@ header, nav, aside, main, footer {
 }
 .nav {
 display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
   width: 98.7%;
 }
 .nav a {
@@ -48,32 +47,14 @@ display: grid;
   align-items: center;
   justify-content: center;
 
-  height: 100px;
+  height: 100px; /* controls square height */
   text-decoration: none;
-  color: black;
-}
-.subnav {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  gap: 10px;
-  height: 96%;
-}
-.subnav div {
-  background: #ad7525;
-  border: 2px solid black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: black;
-}
-.subnav a {
   color: black;
 }
 
 .foot {
 display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
   width: 98.7%;
 }
 .foot a {
@@ -84,7 +65,7 @@ display: grid;
   align-items: center;
   justify-content: center;
 
-  height: 60px;
+  height: 60px; /* controls square height */
   text-decoration: none;
   color: black;
 }
