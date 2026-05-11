@@ -2,7 +2,6 @@ body {
   margin: 0;
 }
 
-/* Top sections */
 header {
   background: #007535;
   padding: 15px;
@@ -13,20 +12,17 @@ nav {
   padding: 10px;
 }
 
-/* GRID CONTAINER */
 .grid-container {
   display: grid;
   min-height: 60vh;
 }
 
 
-/* Content */
 main {
   background: #008f8f;
   padding: 10px;
 }
 
-/* Footer */
 footer {
   background: #1c77c7;
   padding: 10px;
@@ -36,7 +32,7 @@ header, nav, aside, main, footer {
 }
 .nav {
 display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  grid-template-columns: repeat(3, 1fr); 
   width: 98.7%;
 }
 .nav a {
@@ -47,14 +43,14 @@ display: grid;
   align-items: center;
   justify-content: center;
 
-  height: 100px; /* controls square height */
+  height: 100px; 
   text-decoration: none;
   color: black;
 }
 
 .foot {
 display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  grid-template-columns: repeat(3, 1fr); 
   width: 98.7%;
 }
 .foot a {
@@ -65,7 +61,7 @@ display: grid;
   align-items: center;
   justify-content: center;
 
-  height: 60px; /* controls square height */
+  height: 60px; 
   text-decoration: none;
   color: black;
 }
