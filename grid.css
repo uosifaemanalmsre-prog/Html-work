@@ -3,12 +3,12 @@ body {
 }
 
 header {
-  background: #007535;
+  background: #212994;
   padding: 15px;
 }
 
 nav {
-  background: #1c77c7;
+  background: #500C7D;
   padding: 10px;
 }
 
@@ -19,17 +19,17 @@ nav {
 }
 
 aside {
-  background: #1c77c7;
+  background: linear-gradient(to right,#1d0087 #920319);
   padding: 10px;
 }
 
 main {
-  background: #008f8f;
+  background: linear-gradient(to right, #1d0087, #d30020);
   padding: 10px;
 }
 
 footer {
-  background: #1c77c7;
+  background: #500C7D;
   padding: 10px;
 }
 header, nav, aside, main, footer {
@@ -42,7 +42,7 @@ display: grid;
 }
 .nav a {
   border: 2px solid black;
-  background: #ad7525;
+  background: #9b0116;
   
   display: flex;
   align-items: center;
@@ -50,7 +50,7 @@ display: grid;
 
   height: 100px;
   text-decoration: none;
-  color: black;
+  color: rgb(245, 199, 147);
 }
 .subnav {
   display: grid;
@@ -58,9 +58,11 @@ display: grid;
   grid-template-rows: repeat(3, 1fr);
   gap: 10px;
   height: 96%;
+  background-image: url('pexels-anniroenkae-11394981.jpg');
+    background-repeat: repeat;
 }
 .subnav div {
-  background: #ad7525;
+  background: #8c30c9;
   border: 2px solid black;
   display: flex;
   align-items: center;
@@ -68,7 +70,7 @@ display: grid;
   color: black;
 }
 .subnav a {
-  color: black;
+  color: rgb(245, 199, 147);
 }
 
 .foot {
@@ -78,7 +80,7 @@ display: grid;
 }
 .foot a {
   border: 2px solid black;
-  background: #ad7525;
+  background: #0D29D7;
   
   display: flex;
   align-items: center;
@@ -86,7 +88,7 @@ display: grid;
 
   height: 60px;
   text-decoration: none;
-  color: black;
+  color: rgb(245, 199, 147);
 }
 .header{
     display: flex;

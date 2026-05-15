@@ -3,12 +3,12 @@ body {
 }
 
 header {
-  background: #007535;
+  background: #212994;
   padding: 15px;
 }
 
 nav {
-  background: #1c77c7;
+  background: #500C7D;
   padding: 10px;
 }
 
@@ -21,12 +21,12 @@ nav {
 
 main {
     width: 100%;
-  background: #008f8f;
+  background: linear-gradient(to right, #1d0087, #d30020);
   padding: 10px;
 }
 
 footer {
-  background: #1c77c7;
+  background: #500C7D;
   padding: 10px;
 }
 header, nav, aside, main, footer {
@@ -39,7 +39,7 @@ display: grid;
 }
 .nav a {
   border: 2px solid black;
-  background: #ad7525;
+  background: #9b0116;
   
   display: flex;
   align-items: center;
@@ -57,7 +57,7 @@ display: grid;
 }
 .foot a {
   border: 2px solid black;
-  background: #ad7525;
+  background: #0D29D7;
   
   display: flex;
   align-items: center;

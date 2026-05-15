@@ -18,9 +18,16 @@ body {
     flex: 1;
     border: 4px solid black;
     padding: 10px;
-    background-color: #32587A;
 }
-
+.e1 {
+background-color: linear-gradient(to right, #1d0087, #d30020);
+}
+.e2 {
+background-color: linear-gradient(to right, #1d0087, #d30020);
+}
+.e3 {
+background-color: linear-gradient(to right, #1d0087, #d30020);
+}
 .item {
     display: flex;
     flex-direction: row;
