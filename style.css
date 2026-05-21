@@ -1,19 +1,10 @@
-body {
-  background-color: #32587A;
-  margin-left: 64px;
-  margin-right: 64px;
-}
+
 
 h1, h2, h3, h4, h5, h6 {
   color: rgb(245, 199, 147);
 }
 
-section {
-  border: 2px solid #000000;
-  background-color: linear-gradient(to right, #1d0087, #d30020);
-  padding: 16px;  
-  margin-bottom: 16px;
-}
+
 h1 {
   font-size: 60px;
 }
@@ -29,23 +20,15 @@ h3 {
 h4 {
   font-size: 18px;
 }
-a {
-  color: #800000;
-}
-a:hover {
-  color: #C70202;
-}
-a:visited {
-  color: #03A115;
-}
 button {
-  background-color: #800000;
+  background-color: rgb(250, 237, 221);
   color: white;
   border: none;
   padding: 10px 16px;
+  color: black;
 }
 button:hover {
-  background-color: #C70202;
+  background-color: rgb(245, 199, 147);
 }
 input:focus,
 textarea:focus,
@@ -57,37 +40,48 @@ li:last-child {
 }
 body {
     background-image: url('pexels-anniroenkae-3435249.jpg');
-    background-size: cover;
+     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-body {
-  margin-left: 64px;
-  margin-right: 64px;
+@media (min-width: 641px) {
+
+    nav a {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    body {
+        margin-left: 64px;
+        margin-right: 64px;
+    }
+
+    h1 { font-size: 60px; }
+    h2 { font-size: 48px; }
+    h3 { font-size: 32px; }
+    h4 { font-size: 18px; }
 }
 
-nav a {
-  display: inline-block;
-}
-
-h1 { font-size: 60px; }
-h2 { font-size: 48px; }
-h3 { font-size: 32px; }
-h4 { font-size: 18px; }
 @media (max-width: 640px) {
 
-  body {
-    margin-left: 16px;
-    margin-right: 16px;
-  }
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
 
-  nav a {
-    display: block;
-  }
+    nav a {
+        display: block;
+        margin-bottom: 10px;
+    }
 
-  h1 { font-size: 32px; }
-  h2 { font-size: 26px; }
-  h3 { font-size: 22px; }
-  h4 { font-size: 18px; }
+    body {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    h1 { font-size: 32px; }
+    h2 { font-size: 26px; }
+    h3 { font-size: 22px; }
+    h4 { font-size: 18px; }
 }

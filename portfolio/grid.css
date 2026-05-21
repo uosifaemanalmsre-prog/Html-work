@@ -43,13 +43,33 @@ justify-content: center;
   grid-template-areas:
     'header header header'
     "nav nav nav"
-    'content content content'
+    'subnav content content'
     'status status status';
   grid-template-columns: 140px 1fr 1fr;
 
   grid-template-rows: 75px 120px 1fr 75px;
 }
 
+
+aside {
+  background: linear-gradient(to right,#1d0087, #920319);
+  grid-area: subnav;
+  display: grid;
+grid-template-rows: repeat(4, 1fr);
+}
+aside a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(245, 199, 147);
+}
+aside > * {
+  border-bottom: 2px solid black;
+}
+
+aside > *:last-child {
+  border-bottom: none;
+}
 
 main {
   background: linear-gradient(to right, #1d0087, #d30020);

@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/png" href="../favicon.png">
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../fonts.css">
-    <link rel="stylesheet" href="../gridtalk.css">
-    <title>Talk Page</title>
-</head>
-<body>
-    
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Grid Layout</title>
+<link rel="stylesheet" href="../fonts.css">
+<link rel="stylesheet" href="grid.css">
+<link rel="stylesheet" href="../style.css">
+<style>
 
-<header2>
-    <h1>Talk / Comments Page</h1>
-</header2>
-<header class="header">
+p {
+  font-size: 30px;
+}
+</style>
+<body class="grid-container">
+  <header>
     <span>Yousef Almassri</span>
-     <button onclick="commentDialog.showModal()">
-        Comment
-     </button>
     <span>Tiev25P</span>
   </header>
-  <nav class="nav">
-  <div><a href="../index.html">CV</a></div>
-  <div><a href="index.html">Portfolio</a></div>
-  <div><a href="../work.html">Work Experience</a></div>
-  </nav>
+  <nav>
+    <a href="../index.html">CV</a>
+    <a href="index.html">Portfolio</a>
+    <a href="../work.html">Work EX</a>
+    </nav>
+    
 
-<main2>
-<div class="grid-container">
-    <main>
-        <section class="sec">
+  <aside>
+    <a href="talk.html">Discussion</a>
+    <a href="video.html">Video</a>
+    <a href="flex.html">Flex</a>
+    <a href="flex.html">Fex</a>
+</aside>
+
+<main>
+   <section>
     <dialog id="commentDialog">
 
         <h2>Leave a Comment</h2>
@@ -104,17 +107,13 @@
 
     </section2>
 
-</main2>
 </section>
-
     </main>
-  </div>
-
-<footer class="foot">
-  <div><a href="https://taito.edu.turku.fi/">Moodle</a></div>
-  <div><a href="https://turku.inschool.fi/">Wilma</a></div>
-  <div><a href="https://tai.fi/">TAI</a></div>
-  </footer>
+    <footer>
+      <a href="https://taito.edu.turku.fi/">Moodle</a>
+      <a href="https://turku.inschool.fi/">Wilma</a>
+      <a href="https://tai.fi/">TAI</a>
+    </footer>
 
 </body>
 </html>

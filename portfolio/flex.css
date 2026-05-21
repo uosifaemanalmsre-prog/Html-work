@@ -4,13 +4,6 @@ body {
   margin-right: 64px;
 }
 
-.main-container {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    padding: 0px;
-}
-
 .column {
     display: flex;
     flex-direction: column;
@@ -36,7 +29,10 @@ background-color: linear-gradient(to right, #1d0087, #d30020);
     border: 3px solid black;
     padding: 10px;
 }
-
+main {
+    display: flex;
+  flex-direction: row;
+}
 .item img {
     width: 110px;
     height: 110px;
