@@ -2,8 +2,11 @@ body {
   background-color: #32587A;
   margin-left: 64px;
   margin-right: 64px;
+  
 }
-
+span {
+  color: black;
+}
 .column {
     display: flex;
     flex-direction: column;

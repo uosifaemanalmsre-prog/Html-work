@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="../fonts.css">
 <link rel="stylesheet" href="grid.css">
 <link rel="stylesheet" href="../style.css">
+<script src="talk.js"></script>
 <style>
 
 p {
@@ -17,6 +18,9 @@ p {
   <header>
     <span>Yousef Almassri</span>
     <span>Tiev25P</span>
+  <button onclick="commentDialog.showModal()">
+    comment
+</button>
   </header>
   <nav>
     <a href="../index.html">CV</a>
@@ -29,7 +33,8 @@ p {
     <a href="talk.html">Discussion</a>
     <a href="video.html">Video</a>
     <a href="flex.html">Flex</a>
-    <a href="flex.html">Fex</a>
+    <a href="muuttujia.html">Calculator</a>
+    <a href="todo.html">To-Do list</a>
 </aside>
 
 <main>
@@ -41,38 +46,40 @@ p {
         <form>
             <div>
                 <label>Your message:</label><br>
-                <textarea rows="6" cols="50"></textarea>
+                <textarea id="bodyField" rows="6" cols="50"></textarea>
             </div>
 
             <div>
                 <label>Email:</label><br>
-                <input type="email" required>
+                <input id="emailField" type="email" required>
             </div>
 
             <div>
                 <label>Birthday:</label><br>
-                <input type="date">
+                <input id="birthdayField" type="date">
             </div>
 
             <div>
                 <label>Message type:</label><br>
-                <select>
+                <select id="typeField">
                     <option>Question</option>
                     <option>Comment</option>
                 </select>
             </div>
 
             <div>
-                <input type="checkbox">
+                 <input id="usageField" type="checkbox">
                 <label>I agree that my data can be used for marketing</label>
             </div>
 
             <div>
-                <button type="submit">Send</button>
+                 <button type="submit" onclick="send(event)">
+            Send
+        </button>
 
-                <button type="button" onclick="commentDialog.close()">
-                    Close
-                </button>
+        <button type="button" onclick="commentDialog.close()">
+            Close
+        </button>
             </div>
         </form>
 

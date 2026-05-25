@@ -7,21 +7,15 @@
 <link rel="stylesheet" href="../fonts.css">
 <link rel="stylesheet" href="grid.css">
 <link rel="stylesheet" href="../style.css">
-<script src="index.js"></script>
+<script src="todo.js"></script>
 
 <style>
     p {
   font-size: 40px;
 }
 
-.btnContainer{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
 </style>
-<body class="grid-container">
+<body class="grid-container" onload="updateList()">
   <header>
     <span>Yousef Almassri</span>
     <span>Tiev25P</span>
@@ -33,13 +27,19 @@
     <a href="../work.html">Work EX</a>
     </nav>
     <main>
-      <h1> Games I play at the moment</h1>
-    <p>Elden Ring</p>
-    <br>
-    <h1>Hobbies</h1>
-    <p>Mostly Gym sometimes volleyball</p>
-    <h1>Contact info</h1>
-    <p>uosifaemanalmsre@gmail.com</p>
+
+    <h1>To-Do List</h1>
+
+   
+    <ul id="todoList"></ul>
+
+ 
+        <input type="text" id="taskInput">
+
+    <button onclick="add()">
+        Add
+    </button>
+
     </main>
     <aside>
       <a href="talk.html">Discussion</a>

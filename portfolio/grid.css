@@ -24,6 +24,9 @@ nav {
   background: #500C7D;
   grid-area: nav;
   justify-content: space-around;
+    align-content: center;
+  text-align: center;
+
 
 }
 nav a {
@@ -34,6 +37,9 @@ justify-content: center;
     border-left: 2px solid black;
   border-right: 2px solid black;
   flex-grow: 1;
+      align-content: center;
+  text-align: center;
+
 }
 
 .grid-container {
@@ -55,7 +61,7 @@ aside {
   background: linear-gradient(to right,#1d0087, #920319);
   grid-area: subnav;
   display: grid;
-grid-template-rows: repeat(4, 1fr);
+grid-template-rows: repeat(5, 1fr);
 }
 aside a {
   display: flex;

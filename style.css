@@ -1,5 +1,11 @@
 
 
+header {
+  background: rgb(121, 1, 1);
+  grid-area: header;
+  align-content: center;
+  text-align: center;
+}
 h1, h2, h3, h4, h5, h6 {
   color: rgb(245, 199, 147);
 }
